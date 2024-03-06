@@ -1,0 +1,18 @@
+.generic-form {
+  .error {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    line-height: 1;
+    font-weight: 300;
+    margin-bottom: 12px;
+    padding-left: 5px;
+  }
+  .form-row + .form-row {
+    margin-top: 7px;
+  }
+}
+
+.reset-password-link p {
+  margin-top: initial;
+  position: initial;
+}

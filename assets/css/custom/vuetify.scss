@@ -1,0 +1,63 @@
+/**
+ * Переопределение элементов управления
+ */
+
+$light-outline-border-color: #1680fb;
+
+.v-field.v-field--variant-outlined .v-field__outline__start,
+.v-field.v-field--variant-outlined .v-field__outline__notch::before,
+.v-field.v-field--variant-outlined .v-field__outline__notch::after,
+.v-field.v-field--variant-outlined .v-field__outline__end {
+  border-width: 0;
+}
+
+.v-field.v-field--variant-outlined.v-field--active.v-theme--custom-light {
+  .v-field__outline__start {
+    border-top-color: $light-outline-border-color;
+    border-top-width: 1px;
+    border-bottom-color: $light-outline-border-color;
+    border-bottom-width: 1px;
+    border-left-color: $light-outline-border-color;
+    border-left-width: 1px;
+  }
+  .v-field__outline__notch::before {
+    border-top-color: $light-outline-border-color;
+    border-top-width: 1px;
+    border-bottom-color: $light-outline-border-color;
+    border-bottom-width: 1px;
+    border-left-width: 0;
+  }
+  .v-field__outline__notch::after {
+    border-bottom-color: $light-outline-border-color;
+    border-bottom-width: 1px;
+  }
+  .v-field__outline__end {
+    border-top-color: $light-outline-border-color;
+    border-top-width: 1px;
+    border-bottom-color: $light-outline-border-color;
+    border-bottom-width: 1px;
+    border-right-color: $light-outline-border-color;
+    border-right-width: 1px;
+  }
+}
+
+.v-field.v-theme--custom-light {
+  background-color: #f5f6f8;
+  &.v-field--active {
+    background-color: #fcfdfd;
+  }
+}
+
+.v-field.v-theme--custom-dark {
+  background-color: #363f54;
+  color: #f1f1f1;
+  &.v-field--active {
+    background-color: #505c77;
+  }
+}
+
+
+
+
+
+
